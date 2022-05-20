@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import {BrowserRouter, Navigate, Route, Routes} from 'react-router-dom';
 import {Concurrency} from './Concurrency';
-import {Batching} from './Batching';
+import {BatchingAndNewStrictMode} from './BatchingAndNewStrictMode';
 import {UseId} from './UseId';
 import {DOM} from './DOM';
 
@@ -16,7 +16,7 @@ root.render(
             <Routes>
                 <Route path="*" element={<Navigate to={"/concurrency"} replace/>}/>
                 <Route path="/concurrency" element={<Concurrency/>}/>
-                <Route path="/batching" element={<Batching/>}/>
+                <Route path="/batching" element={<BatchingAndNewStrictMode/>}/>
                 <Route path="/use_id" element={<UseId/>}/>
                 <Route path="dom" element={<DOM/>}/>
             </Routes>

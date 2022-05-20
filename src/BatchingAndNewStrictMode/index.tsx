@@ -8,7 +8,7 @@ let renderTimes = 0;
 let mountTimes = 0;
 let unmountedTimes = 0;
 
-export const Batching = () => {
+export const BatchingAndNewStrictMode = () => {
 
     const [innerState, setInnerState] = useState(0);
     const [anotherInnerState, setAnotherInnerState] = useState(0);
